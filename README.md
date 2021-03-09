@@ -1,4 +1,3 @@
 # MERN_ECommerce
 
-this is MERN project
-this is to check git
+this is a ECommerce project using MERN (MongoDB, Express, React, Node)
