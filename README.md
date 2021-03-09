@@ -1,3 +1,3 @@
 # MERN_ECommerce
 
-this is a ECommerce project using MERN (MongoDB, Express, React, Node)
+This is an eCommerce project using MERN (MongoDB, Express, React, Node)
