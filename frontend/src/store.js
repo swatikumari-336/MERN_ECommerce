@@ -12,7 +12,10 @@ const reducer = combineReducers({
     userLogin: userLoginReducer
 })
 
-const cartItemsFromStorage = localStorage.getItem('cartItems')
+// const cartItemsFromStorage = localStorage.getItem('cartItems') !== "undefined"
+//     ? localStorage.getItem('cartItems') : []
+
+const cartItemsFromStorage = localStorage.getItem('cartItems') !== "undefined"
     ? JSON.parse(localStorage.getItem('cartItems'))
     : []
 
