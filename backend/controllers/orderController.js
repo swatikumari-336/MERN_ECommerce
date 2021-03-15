@@ -24,6 +24,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
     } else {
         const order = new Order({
             orderItems,
+            user: req.user._id,
             shippingAddress,
             paymentMethod,
             itemsPrice,
@@ -32,11 +33,8 @@ const addOrderItems = asyncHandler(async (req, res) => {
             totalPrice
         })
         const createdOrder = await order.save()
+        res.status(201).json(createdOrder)
     }
-
-
-    res.status(201).json(createdOrder)
-
 })
 
 export {
